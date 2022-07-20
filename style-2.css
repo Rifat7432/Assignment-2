@@ -103,7 +103,7 @@ justify-content: center;
 align-items: center;
 
 }
-.button-bar ul li:last-child a{
+.button-bar ul :first-child a{
     background-color: #e92121;
 }
 
