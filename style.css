@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 0;
     padding: 0;
 }
 body{
@@ -17,8 +17,22 @@ main{
 h1{
     font-size: 50px;
 }
+h3{
+    border-radius: 5px;
+    margin-left:10px;
+    padding: 5px 15px;
+    border: 1px solid gray;
+    display: inline-block;
+    height: 25px;
+    width: 90px;
+}
 span{
     padding-left:10px ;
+    }
+    hr{
+        width: 100%;
+        border: 2px solid rgb(49, 49, 49);
+
     }
 /* top-banner */
 .top-banner{
@@ -75,10 +89,12 @@ width: 90%;
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2,25% 75%);
-    grid-column-gap: 2.5%;
+    grid-column-gap: 1.8%;
+    
 }
 /*  side buttons bar */
 .button-bar{
+    margin-top: 25px;
     padding: 10px;
     background-color: #302d2d;
     border-radius: 15px;
@@ -113,15 +129,38 @@ margin: 10px auto;
 .matchs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-grid-row-gap: 3%;
+/* grid-row-gap: 5%; */
+grid-column-gap: 1%;
 }
-
+.match{
+    box-shadow: 1px 1px 12px 1px #afafaf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 93%;
+    border: 1px solid #cac8c8;
+    border-radius: 15px;
+    margin-top: 25px;
+   
+}
 .top-image-blog{
     width: 260px;
     height: 175px;
-    max-width: 90%;
+    max-width: 100%;
+}
+.match-detail{
+    box-sizing: border-box;
+    padding: 0px 5px;
+    margin-top:30px;
+}
+
+.match-detail p{
+    margin-top: 10px;
 }
 .match-info{
+    margin-bottom: 15px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: space-evenly;
@@ -129,3 +168,71 @@ grid-row-gap: 3%;
 .match-chats{
     display: flex
 }
+
+/* view all button */
+.view-button{
+    height: 100px;
+    width: 50px;
+    margin: 50px auto;
+}
+.view-button button{
+    height: 50px;
+    width: 130px;
+    background-color: #e92121;
+    color: #E5E5E5;
+    border-radius: 10px;
+    
+}
+.view-button button i{
+    margin-left: 10px;
+}
+/* stye fo footer */
+.footer{
+    background-color: #030303;
+    color: #e6e6e6;
+    margin-bottom: 0px;
+}
+.footer-items{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-items-lists{
+ width: 100%;
+ margin-top:60px;
+
+}
+.footer-items-list ul{
+width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.footer-items-list ul li a{
+   
+text-decoration: none;
+color: #e6e6e6;
+}
+.footer-item-icon{
+    width: 100%;
+    margin-top:80px;
+}
+.footer-item-icon ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-item-icon ul li a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
