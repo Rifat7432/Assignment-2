@@ -3,16 +3,17 @@
     padding: 0;
 }
 body{
-    background-color: #dddddd;
+    background-color:#FFFFFF;
     font-family: 'Arima', cursive;
 font-family: 'Edu QLD Beginner', cursive;
 font-family: 'Open Sans', sans-serif;
 }
 main{
-    background-color:  #E5E5E5;
+    background-color: #FFFFFF;
     width: 1150px;
     max-width: 90%;
   margin: auto;
+  margin-bottom: 100px;
 }
 h1{
     font-size: 50px;
@@ -53,16 +54,8 @@ justify-content: center;
  padding:50px 80px ;
 }
 
-.button-bar ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    }
-.button-bar ul li:last-child a{
-    background-color: #e92121;
-}
+
+
 
 .top-title a{
  text-decoration: none;
@@ -110,6 +103,10 @@ justify-content: center;
 align-items: center;
 
 }
+.button-bar ul li:last-child a{
+    background-color: #e92121;
+}
+
 
 .button-bar a{
 text-decoration: none;
@@ -129,7 +126,6 @@ margin: 10px auto;
 .matchs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-/* grid-row-gap: 5%; */
 grid-column-gap: 1%;
 }
 .match{
@@ -146,6 +142,7 @@ grid-column-gap: 1%;
 }
 .top-image-blog{
     width: 260px;
+
     height: 175px;
     max-width: 100%;
 }
@@ -210,9 +207,10 @@ grid-column-gap: 1%;
 }
 .footer-items-list ul{
 width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
+display: grid;
+grid-template-columns: repeat(6,1fr);
+  
+     list-style: none;
 }
 .footer-items-list ul li a{
    
@@ -234,5 +232,179 @@ color: #e6e6e6;
     margin-left: 15px;
     text-decoration: none;
     color: #e6e6e6;
+}
+
+@media only screen and (min-width:993px) {
+    .view-button{
+     display: none; 
+
+    }
+}
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .top-banner {
+        grid-template-columns: repeat(2,30% 70%);
+    }
+    .top-title {
+        width: 220px;
+        padding: 20px 20px;
+    }
+    .top-title a{
+        width: 120px;
+        font-size: 16px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    
+.top-image img {
+    padding-left: 77px;
+    width: 77%;
+}
+.blogs{
+    margin-top: 40px;
+    grid-template-columns: repeat(1,1fr);
+}
+.button-bar{
+    height: 8rem;
+    background-color: #FFFFFF;
+    margin-top: 0;
+    padding: 0;
+}
+.button-bar ul{
+    flex-direction: row;
+}
+.button-bar a {
+    color: #030303;
+    font-size: 14px;
+    height: 45px;
+    width: 10rem;
+    max-width: 80%;
+    border-radius: 10px;
+    margin: 0px auto;
+    border: 1px solid  #e6e6e6;
+
+}
+.matchs{
+    grid-template-columns: repeat(2,1fr);
+
+}
+.match{
+    max-width: 100%;
+    margin-top: 20px;
+}
+.top-image-blog{
+    height: 230px;
+    width: 440px;
+
+    max-width: 100%;
+}
+.footer-items-list ul{
+
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+    text-align: end;
+}
+    
+.footer-items-list ul li{
+    margin-top:30px;
+}
+
+#hidden{
+    display: none;
+}
+
+}
+
+@media only screen and (max-width:576px){
+
+    .top-banner {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .top-title {
+        text-align: center;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 15px;
+       
+    }
+  
+    .top-title a{
+        margin:20px auto;
+        width: 120px;
+        font-size: 16px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    
+.top-image img {
+    padding-left: 77px;
+    width: 77%;
+}
+.blogs{
+    margin-top: 40px;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 3%;
+}
+.button-bar{
+    height: 8rem;
+    background-color: #FFFFFF;
+    margin-top: 0;
+    padding: 0;
+}
+.button-bar ul{
+    flex-direction: column;
+    margin-top: 0;
+    
+}
+.button-bar ul li{
+margin-top: 20px;
+}
+.button-bar a {
+    color: #030303;
+    font-size: 14px;
+    height: 45px;
+    width: 10rem;
+    max-width: 80%;
+    border-radius: 10px;
+    margin: 0px auto;
+    border: 1px solid  #e6e6e6;
+
+}
+.matchs{
+    grid-template-columns: repeat(1,1fr);
+
+}
+.match{
+    max-width: 70%;
+   margin: 15px auto;
+}
+.top-image-blog{
+    height: 200px;
+    width: 362px;
+
+    max-width: 100%;
+}
+.view-button{
+    display: none; 
+
+   }
+ 
+.footer-items-list ul{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+   
+}
+    
+.footer-items-list ul li{
+    margin: 10px auto;
+}
+.footer-item-icon{
+    margin-top:30px ;
+}
+#hidden{
+    display: none;
+}
+
 }
 
